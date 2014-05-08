@@ -29,8 +29,8 @@ module RailsAdmin
 end
 
 RailsAdmin::Config::Fields.register_factory do |parent, properties, fields|
-  if properties[:name] == :uuid
-    fields << RailsAdmin::Config::Fields::Types::Uuid.new(parent, properties[:name], properties)
+  if properties.name == :uuid
+    fields << RailsAdmin::Config::Fields::Types::Uuid.new(parent, properties.name, properties)
     true
   else
     false
