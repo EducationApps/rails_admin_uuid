@@ -10,7 +10,7 @@ module RailsAdmin
   module Config
     module Fields
       module Types
-        class Uuid < RailsAdmin::Config::Fields::Base
+        class Uuid < RailsAdmin::Config::Fields::Types::String
           RailsAdmin::Config::Fields::Types::register(self)
 
           register_instance_option :formatted_value do
